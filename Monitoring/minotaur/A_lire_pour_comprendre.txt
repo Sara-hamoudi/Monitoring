@@ -1,0 +1,110 @@
+Installez le paquet dialog
+-->sudo apt-get update
+-->sudo apt-get install dialog
+
+Pour lancer ce programme en bash --> bash minotaur.sh
+
+  ----------------  ----------------
+
+Ce programme écrits en bash compatible système Debian propose 
+l'affichage de différents paramètres sur une boite de dialogue qui sont les suivants:
+
+ ------------Concernant le CPU----------------
+
+  Voir les infos CPU
+  -->commande utilisée "lscpu"
+ 
+  ----------------
+  
+  PID et nom des processus
+  -->commande utilisée "netstat -p"
+
+ ------------Concernant l'espace disque et la RAM----------------
+
+  Espace disque du système de fichiers
+  -->commande utilisée "df"
+  
+  ----------------
+  
+  Informations sur l’espace disque du système de fichiers
+  -->commande utilisée "df -a"
+  
+  ----------------
+  
+  Espace disque au format lisible par l’homme
+  -->commande utilisée "df -h"
+  
+  ----------------
+  
+  Informations sur le système de fichiers en Mégaoctets
+  -->commande utilisée "df -m"
+  
+  ----------------
+  
+  Type de système de fichiers
+  -->commande utilisée "df -T"
+  
+  ----------------
+    
+  Pour afficher les informations de la RAM
+  -->commande utilisée "cat /proc/meminfo"
+  
+  ----------------
+
+ ------------Concernant les propriétés réseau----------------
+ 
+  Tous les ports réseau
+  -->commande utilisée "netstat"
+  
+  ----------------
+  
+  Table de routage
+  -->commande utilisée "netstat -r"
+  
+  ----------------
+  
+  Liste des interfaces réseau
+  -->commandes utilisées "netstat -i" et "netstat -ie"
+  
+  ----------------
+
+ ------------Concernant les propriétés système----------------
+ 
+ 
+  Liste des propriétés système
+  -->commande utilisée "uname --all"
+  
+  ----------------
+
+  Toutes les propriétés logiciel
+  -->commande utilisée "dpkg -l"
+    
+  ----------------
+
+  Lister les mises à jour
+  -->commande utilisée "cat /etc/apt/sources.list"
+
+  ----------------
+
+-----------------------afficher les processus en cours d'exécution sur le système-----------------------
+ps
+-----------------------Donne la liste complète sur les processus--------------
+ps -ef
+--------------Affiche les procesus qui nont pas de terminal de controle----------
+ps -x
+-------------- Affichez tous les processus au format BSD-----------------------
+ps au
+--------------Afficher les processus parent et enfant-------------------------------
+ps -C sshd
+---------------Presenter le nom de lutilisateur et lheure de lancement----------
+ps u
+---------------Afficher les informations detailles sur les processus-----------
+ps -ef -f
+----------------Afficher le nom de lutilisateur et le domaine------------------
+last w
+----------------Voir les 63 derniere connexion utilisateurs--------------------
+last -n 63
+-----------Affichez chaque processus actif sur un systeme Linux au format generique----------------
+ps -e
+------------------Afficher le UID et GID des utilisateurs------------------------------------------
+cat /etc/passwd
